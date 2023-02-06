@@ -1,0 +1,22 @@
+{
+  "name": "apartmentfinder",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css --watch",
+    "dev": "live-server ./src/public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "mapbox-gl": "^2.12.0"
+  }
+}
