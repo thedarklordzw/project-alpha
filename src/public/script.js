@@ -1,24 +1,33 @@
-import mapboxgl from 'mapbox-gl';
+const modal = document.getElementById('modal');
+const body = document.querySelector('body');
+const modalChild = document.getElementById('layout');
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoidGhlZGFya2xvcmR6dyIsImEiOiJjbGRxYTMzZzYwaGtmM29vNDhvdHc5Nm94In0.osVJRv8oXT8sOA-HDjQD6w';
+const close = document.getElementById('close');
+const button = document.getElementById('button');
 
-const map = new mapboxgl.Map({
-  container: 'map', // container ID
-  style: 'mapbox://styles/mapbox/streets-v12', // style URL
-  center: [-74.5, 40], // starting position [lng, lat]
-  zoom: 9, // starting zoom
-});
+const showModal = event => {
+  console.log(event);
+  modal.classList.add('flex');
+  modal.classList.remove('hidden');
+  body.classList.add('overflow-hidden');
+};
 
-window.onload(() => {
-  console.log('555');
-  map.addControl(
-    new mapboxgl.GeolocateControl({
-      positionOptions: {
-        enableHighAccuracy: true,
-      },
-      trackUserLocation: true,
-      showUserHeading: true,
-    })
-  );
-});
+const hideModal = event => {
+  console.log(event);
+  modal.classList.remove('flex');
+  modal.classList.add('hidden');
+  body.classList.remove('overflow-hidden');
+};
+
+const modalOverlayClick = event => {
+  if (event.target === modal) {
+    modal.classList.add('hidden');
+    body.classList.remove('overflow-hidden');
+  } else {
+    return;
+  }
+};
+
+button.addEventListener('click', showModal);
+close.addEventListener('click', hideModal);
+modal.addEventListener('click', modalOverlayClick);
