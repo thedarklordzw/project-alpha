@@ -9,7 +9,7 @@
     "start": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css --watch",
     "tailwind": "live-server ./src/public",
     "dev": "npm run start & npm run tailwind",
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css"
+    "build": "npx tailwindcss -o ./src/public/output.css --minify"
   },
   "keywords": [],
   "author": "",
