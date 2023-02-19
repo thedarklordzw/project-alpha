@@ -1,6 +1,7 @@
 const modal = document.getElementById('modal');
 const body = document.querySelector('body');
 const modalChild = document.getElementById('layout');
+const modalShowEl = document.getElementById('modal-show');
 
 const close = document.getElementById('close');
 const button = document.getElementById('button');
@@ -31,3 +32,4 @@ const modalOverlayClick = event => {
 button.addEventListener('click', showModal);
 close.addEventListener('click', hideModal);
 modal.addEventListener('click', modalOverlayClick);
+modalShowEl.addEventListener('click', showModal);
