@@ -28,7 +28,7 @@
     <script type="module" src="script.js" defer></script>
     <title>Find Apartments</title>
   </head>
-  <body class="flex flex-col min-h-full relative">
+  <body class="flex flex-col min-h-screen relative">
     <div
       id="modal"
       class="justify-center items-center absolute top-0 left-0 bg-sky-900/70 z-30 w-screen h-screen px-10 py-5 hidden"
@@ -90,9 +90,22 @@
           <nav>
             <button
               id="button"
-              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all"
+              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all md:hidden md:pointer-events-none md:invisible"
             >
               Get Deals
+            </button>
+            <button
+              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all hidden pointer-events-none invisible md:visible md:pointer-events-auto md:block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+              </svg>
             </button>
           </nav>
         </header>
