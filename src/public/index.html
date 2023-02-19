@@ -28,7 +28,7 @@
     <script type="module" src="script.js" defer></script>
     <title>Find Apartments</title>
   </head>
-  <body class="flex flex-col min-h-full relative">
+  <body class="flex flex-col min-h-screen relative">
     <div
       id="modal"
       class="justify-center items-center absolute top-0 left-0 bg-sky-900/70 z-30 w-screen h-screen px-10 py-5 hidden"
@@ -82,361 +82,85 @@
     <div class="flex-grow-1 shrink-0 basis-auto">
       <div class="h-full">
         <header
-          class="text-xl bg-sky-700 align-center flex justify-between items-center text-gray-200 py-8 px-32 border-b-8 border-orange-500"
+          class="text-xl bg-sky-700 align-center flex justify-between items-center text-gray-200 py-8 px-32 border-b-8 border-orange-500 lg:px-8"
         >
-          <a href="#">
-            <div class="w-64">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                id="Layer_2"
-                data-name="Layer 2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 323.79 113.98"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #e6e6e6;
-                    }
-
-                    .cls-2 {
-                      fill: #ccc;
-                    }
-                  </style>
-                </defs>
-                <g id="Layer_1-2" data-name="Layer 1">
-                  <g>
-                    <path
-                      class="cls-2"
-                      d="M53.98,27.94c0,5.32-1.2,10.18-3.55,14.44-2.36,4.27-5.63,7.64-9.73,10.01-4.08,2.36-8.7,3.56-13.71,3.56s-9.63-1.2-13.71-3.56c-4.09-2.37-7.36-5.73-9.73-10.01-2.36-4.26-3.55-9.12-3.55-14.44s1.19-10.17,3.55-14.41c2.36-4.24,5.63-7.6,9.72-9.97C17.36,1.2,21.98,0,26.99,0s9.62,1.2,13.71,3.56c4.09,2.37,7.37,5.72,9.72,9.97,2.36,4.24,3.55,9.08,3.55,14.41Zm-12.7,0c0-3.29-.62-6.19-1.83-8.63-1.2-2.41-2.88-4.28-5-5.55-2.13-1.28-4.64-1.93-7.46-1.93s-5.34,.65-7.46,1.93c-2.12,1.28-3.8,3.15-5,5.55-1.22,2.44-1.83,5.35-1.83,8.63s.62,6.19,1.83,8.63c1.2,2.41,2.88,4.28,5,5.55,2.12,1.28,4.63,1.93,7.47,1.93s5.34-.65,7.46-1.93c2.11-1.27,3.79-3.14,5-5.55,1.22-2.44,1.83-5.35,1.83-8.63Z"
-                    />
-                    <path
-                      class="cls-2"
-                      d="M125.75,1.33l-13.38,54.62h-8.79c-3.42,0-6.41-2.31-7.26-5.63l-7.54-29.23-9.05,34.85h-8.65c-3.46,0-6.46-2.35-7.28-5.71L54.08,10.61c-.55-2.25-.05-4.59,1.38-6.41s3.58-2.87,5.9-2.87h4.06l7.28,36.88,8-31.24c.85-3.32,3.84-5.64,7.26-5.64h7.36l9.51,36.9,6.09-30.85c.69-3.5,3.79-6.05,7.36-6.05h7.46Z"
-                    />
-                    <path
-                      class="cls-2"
-                      d="M174.33,55.95h-5.9c-3.9,0-7.5-1.94-9.65-5.2l-18.42-27.97V55.95h-1.07c-6.37,0-11.55-5.18-11.55-11.55V1.33h5.88c3.92,0,7.53,1.96,9.67,5.24l18.42,28.21V12.89c0-6.37,5.18-11.55,11.55-11.55h1.07V55.95Z"
-                    />
-                    <path
-                      class="cls-2"
-                      d="M193.54,11.77v11.46h18.58v1.07c0,5.02-4.08,9.1-9.1,9.1h-9.48v11.98h20.81v1.44c0,5.02-4.08,9.1-9.1,9.1h-15.24c-5.02,0-9.1-4.08-9.1-9.1V10.41c0-5.02,4.08-9.1,9.1-9.1h24.34v1.37c0,5.02-4.08,9.1-9.1,9.1h-11.71Z"
-                    />
-                    <path
-                      class="cls-2"
-                      d="M265.81,28.59c0,5.36-1.14,10.16-3.4,14.27h0c-2.27,4.13-5.61,7.39-9.91,9.68-4.27,2.28-9.41,3.43-15.26,3.43h-7.75c-6.61,0-11.98-5.38-11.98-11.98V13.34c0-6.61,5.38-11.98,11.98-11.98h7.75c5.85,0,10.98,1.13,15.25,3.35,4.31,2.25,7.65,5.47,9.92,9.57,2.26,4.08,3.4,8.9,3.4,14.31Zm-12.77,0c0-5.07-1.45-9.04-4.32-11.79-2.88-2.76-7.04-4.16-12.38-4.16h-6.21v25.61c0,3.43,2.79,6.21,6.21,6.21,5.34,0,9.5-1.4,12.38-4.16,2.86-2.75,4.32-6.69,4.32-11.71Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M47.5,60.38v53.55h-1.07c-6.45,0-11.63-5.18-11.63-11.55v-11.27H14.5v22.82h-1.07c-6.37,0-11.55-5.18-11.55-11.55v-31.52c0-6.37,5.18-11.55,11.55-11.55h1.07v21.26h20.3v-9.71c0-6.37,5.18-11.55,11.55-11.55h1.07l.08,1.07Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M105.69,85.94c0,5.32-1.19,10.18-3.55,14.44-2.36,4.27-5.63,7.64-9.73,10.01-4.08,2.36-8.7,3.56-13.71,3.56s-9.63-1.2-13.71-3.56c-4.09-2.37-7.36-5.74-9.73-10.01-2.36-4.26-3.55-9.12-3.55-14.44s1.19-10.17,3.55-14.41c2.36-4.24,5.63-7.6,9.73-9.97,4.09-2.36,8.7-3.56,13.71-3.56s9.62,1.2,13.71,3.56c4.09,2.37,7.37,5.72,9.73,9.97,2.36,4.24,3.55,9.08,3.55,14.41Zm-12.7,0c0-3.29-.62-6.19-1.83-8.63-1.2-2.41-2.88-4.28-5-5.55-2.13-1.28-4.64-1.93-7.46-1.93s-5.34,.65-7.46,1.93c-2.12,1.28-3.8,3.15-5,5.55-1.22,2.44-1.83,5.35-1.83,8.63s.62,6.19,1.83,8.63c1.2,2.41,2.88,4.28,5,5.55,2.12,1.28,4.63,1.93,7.46,1.93s5.34-.65,7.46-1.93c2.11-1.27,3.8-3.14,5-5.55,1.22-2.44,1.83-5.35,1.83-8.63Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M152.98,58.84v31.84c0,5.01-.96,9.32-2.84,12.81-1.91,3.52-4.58,6.19-7.96,7.92-3.33,1.71-7.16,2.57-11.38,2.57-6.56,0-11.89-2.01-15.85-5.96-3.96-3.96-5.96-9.79-5.96-17.33v-20.37c0-6.33,5.15-11.48,11.48-11.48h1.07v31.84c0,3.83,.82,6.7,2.45,8.55,1.61,1.83,3.91,2.72,7.04,2.72s5.35-.89,6.96-2.72c1.62-1.85,2.45-4.72,2.45-8.55v-20.37c0-6.33,5.15-11.48,11.48-11.48h1.07Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M196.72,97.99c0,2.86-.73,5.53-2.16,7.94-1.44,2.42-3.58,4.38-6.38,5.83-2.77,1.44-6.16,2.17-10.08,2.17s-7.34-.67-10.38-1.98c-3.09-1.33-5.6-3.29-7.46-5.81-1.87-2.53-2.95-5.52-3.22-8.88l-.09-1.16h9.78c1.81,0,3.42,1.12,4.01,2.79,.38,1.07,.99,2.02,1.83,2.83,1.27,1.22,2.93,1.82,5.09,1.82,1.9,0,3.3-.47,4.26-1.43,.96-.96,1.43-2.19,1.43-3.74,0-1.38-.37-2.47-1.14-3.34-.83-.94-1.91-1.72-3.2-2.29-1.4-.62-3.37-1.36-5.85-2.19-3.31-1.1-6.06-2.21-8.18-3.3-2.23-1.14-4.14-2.81-5.7-4.97-1.59-2.21-2.39-5.09-2.39-8.58,0-4.83,1.77-8.7,5.27-11.5,3.42-2.75,7.99-4.14,13.57-4.14s10.47,1.43,13.94,4.25c3.51,2.85,5.53,6.7,6,11.43l.12,1.18h-8.44c-2.45,0-4.7-1.31-6.01-3.52-.31-.52-.69-1-1.14-1.42-1.09-1.03-2.58-1.53-4.54-1.53-1.68,0-2.99,.41-3.99,1.27-.95,.81-1.41,1.99-1.41,3.61,0,1.27,.36,2.29,1.1,3.11,.81,.9,1.87,1.65,3.14,2.23,1.38,.63,3.28,1.34,5.65,2.11,3.42,1.21,6.22,2.35,8.36,3.4,2.26,1.12,4.2,2.8,5.79,5.02,1.61,2.26,2.43,5.22,2.43,8.8Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M213.47,59.31v54.62h-1.07c-6.37,0-11.55-5.18-11.55-11.55v-31.52c0-6.37,5.18-11.55,11.55-11.55h1.07Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M266.55,113.95h-5.9c-3.9,0-7.5-1.95-9.65-5.2l-18.42-27.97v33.17h-1.07c-6.37,0-11.55-5.18-11.55-11.55V59.33h5.88c3.92,0,7.53,1.96,9.67,5.24l18.42,28.21v-21.89c0-6.37,5.18-11.55,11.55-11.55h1.07v54.62Z"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M323.79,88.65l-.02,5.14c-.77,3.6-2.3,6.97-4.53,10-2.24,3.05-5.22,5.52-8.85,7.35-3.63,1.83-7.83,2.75-12.49,2.75-5.32,0-10.09-1.19-14.17-3.52-4.1-2.34-7.31-5.66-9.55-9.87-2.23-4.18-3.36-9.01-3.36-14.37s1.13-10.19,3.36-14.37c2.24-4.2,5.44-7.53,9.51-9.9,4.06-2.36,8.82-3.56,14.14-3.56,6.6,0,12.16,1.66,16.55,4.93h0c1.83,1.37,3.41,2.96,4.7,4.73,1.39,1.91,1.59,4.41,.51,6.52-1.08,2.11-3.22,3.43-5.59,3.43h-.27c-1.96,0-3.84-1-5.01-2.67-.88-1.25-2.02-2.32-3.39-3.18-2.07-1.3-4.57-1.95-7.42-1.95s-5.33,.65-7.48,1.93c-2.14,1.27-3.83,3.13-5.02,5.51-1.21,2.41-1.82,5.3-1.82,8.59,0,5.19,1.39,9.27,4.12,12.12,2.72,2.84,6.53,4.28,11.31,4.28,3.49,0,6.53-1.04,9.02-3.1,2.2-1.81,3.73-4.3,4.57-7.39h-11.22c-3.46,0-6.27-2.81-6.27-6.27v-3.38h22.41c3.46,0,6.27,2.81,6.26,6.26Z"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </div>
+          <a href="/" class="block">
+            <img src="./images/logo.svg" alt="OwnedHousing Logo" />
           </a>
           <nav>
-            <ul class="flex gap-8 text-2xl items-center">
-              <li>
-                <a href="#offers" class="hover:text-orange-300">Offers</a>
-              </li>
-              <li>
-                <button
-                  id="button"
-                  class="shadow-sm text-sky-900 py-5 px-10 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all"
-                >
-                  Get Deals
-                </button>
-              </li>
-            </ul>
+            <button
+              id="button"
+              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all md:hidden md:pointer-events-none md:invisible"
+            >
+              Get Deals
+            </button>
+            <button
+              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all hidden pointer-events-none invisible md:visible md:pointer-events-auto md:block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+              </svg>
+            </button>
           </nav>
         </header>
-        <section
-          class="border-b-8 border-orange-500 bg-sky-700 flex items-center mb-8 rounded-sm"
+        <main
+          class="border-b-8 border-orange-500 bg-sky-700 flex items-center rounded-sm relative"
         >
-          <div class="text-center basis-3/6 px-24">
+          <div
+            class="text-center sm:top-20 left-1/2 absolute translate-x-[-50%] z-20 lg:w-screen"
+          >
             <h1
-              class="mb-4 text-6xl tracking-wide text-clip font-sans font-extrabold text-white"
+              class="mb-4 text-7xl tracking-wide text-clip font-sans font-extrabold text-white xl:text-4xl md:text-3xl sm:text-2xl"
             >
-              Get affordable housing at unbeatable prices!
+              Find the perfect home for you and your family
             </h1>
-            <button
-              class="bg-gray-100 shadow-sm text-sky-900 text-2xl font-medium uppercase py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all"
+            <div
+              class="flex gap-8 justify-center md:flex-wrap md:px-8 md:gap-4"
             >
-              Get Started
-            </button>
+              <a
+                href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
+                class="bg-gray-100 shadow-sm text-sky-900 text-2xl font-medium inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full"
+              >
+                Get Started
+              </a>
+
+              <button
+                id="modal-show"
+                class="bg-transparent shadow-sm border border-gray-200 text-gray-200 text-2xl font-medium inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full sm:hidden sm:invisible sm:pointer-events-none"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
-          <div class="basis-3/6">
+          <div class="">
             <img
-              class="inline-block"
+              class="inline-block brightness-50"
               src="./images/hero.webp"
               alt="Hero image, Rent to Own Housing"
             />
           </div>
-        </section>
+        </main>
       </div>
-      <main id="property">
-        <h2 class="ml-8 text-6xl font-sans font-extrabold mb-3 text-gray-500">
-          Offers
-        </h2>
-        <div class="flex gap-3 mb-16 mx-6">
-          <article class="w-2/6 grid grid-cols-2 gap-4 rounded">
-            <section
-              class="text-center pb-8 overflow-hidden rounded border border-slate-200 hover:shadow-md transition-all cursor-pointer"
-            >
-              <img
-                src="./images/property2.webp"
-                alt="Property image"
-                class="mb-2 h-['25rem']"
-              />
-              <div class="mx-4">
-                <h3 class="text-xl mb text-gray-600">
-                  Sentral Michigan Avenue
-                </h3>
-                <p class="text-gray-800 mb-4 text-3xl">$3000.00</p>
-                <button
-                  class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded"
-                >
-                  Request Application
-                </button>
-              </div>
-            </section>
-            <section
-              class="text-center bpb-8 overflow-hidden rounded border border-slate-200 hover:shadow-md transition-all cursor-pointer"
-            >
-              <img
-                src="./images/property3.webp"
-                alt="Property image"
-                class="mb-2 h-['25rem']"
-              />
-              <div class="mx-4">
-                <h3 class="text-xl mb text-gray-600">
-                  Sentral Michigan Avenue
-                </h3>
-                <p class="text-gray-800 mb-4 text-3xl">$3000.00</p>
-                <button
-                  class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded"
-                >
-                  Request Application
-                </button>
-              </div>
-            </section>
-            <section
-              class="text-center pb-8 overflow-hidden rounded border border-slate-200 hover:shadow-md transition-all cursor-pointer"
-            >
-              <img
-                src="./images/property4.webp"
-                alt="Property image"
-                class="mb-2 h-['25rem']"
-              />
-              <div class="mx-4">
-                <h3 class="text-xl mb text-gray-600">
-                  Sentral Michigan Avenue
-                </h3>
-                <p class="text-gray-800 mb-4 text-3xl">$3000.00</p>
-                <button
-                  class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded"
-                >
-                  Request Application
-                </button>
-              </div>
-            </section>
-            <section
-              class="relative text-center pb-8 overflow-hidden rounded border border-slate-200 hover:shadow-md transition-all cursor-pointer"
-            >
-              <div
-                class="bg-red-600 text-gray-200 rounded-r font-sans uppercase font-extrabold absolute top-0 left-0 py-3 px-6 shadow-md"
-              >
-                Best Offer
-              </div>
-              <img
-                src="./images/property3.webp"
-                alt="Property image"
-                class="mb-2 h-['25rem']"
-              />
-              <div class="mx-4">
-                <h3 class="text-xl mb text-gray-600">
-                  Sentral Michigan Avenue
-                </h3>
-                <p class="text-gray-800 mb-4 text-3xl">$3000.00</p>
-                <button
-                  class="block w-full py-3 hover:bg-red-700 bg-red-600 transition-all text-white rounded"
-                >
-                  View Offer
-                </button>
-              </div>
-            </section>
-          </article>
-          <div id="map" class="rounded shadow-sm w-4/6 self-stretch">
-            <!-- map turned offf -->
-            <!-- <script>
-            mapboxgl.accessToken =
-              'pk.eyJ1IjoidGhlZGFya2xvcmR6dyIsImEiOiJjbGRyaHYzMzYwMHQ2M29wYm5uY3NpMGEwIn0.QREhZgRbQFpg4qf_i1LXQQ';
-
-            const map = new mapboxgl.Map({
-              container: 'map', // container ID
-              // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-              style: 'mapbox://styles/mapbox/streets-v12', // style URL
-              center: [-74.5, 40], // starting position [lng, lat]
-              zoom: 9, // starting zoom
-            });
-
-            console.log('code works');
-
-            map.addControl(
-              new mapboxgl.GeolocateControl({
-                positionOptions: {
-                  enableHighAccuracy: true,
-                },
-                trackUserLocation: true,
-                showUserHeading: true,
-              })
-            );
-
-            console.log('code works too');
-          </script> -->
-          </div>
-        </div>
-      </main>
     </div>
-    <section class="bg-gray-300 text-sky-800 p-24">
-      <h3 class="text-6xl font-sans font-extrabold mb-3">
-        Subscribe to our mailing list to get the best offers
-      </h3>
-      <article>
-        <div>
-          <form class="flex items-center gap-4">
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="w-[500px] rounded py-3 px-6 shadow-inner"
-            />
-            <button class="bg-sky-700 text-gray-100 py-3 px-12 rounded shadow">
-              Start Now!
-              <!-- <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                class="fill-sky-900 w-6"
-              >
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                />
-              </svg> -->
-            </button>
-          </form>
-        </div>
-      </article>
-    </section>
-
     <footer
-      class="text-2xl flex justify-between items-center shrink-0 bg-sky-700 px-32 py-16 text-white"
+      class="text-2xl flex justify-between items-center shrink-0 bg-sky-700 px-32 py-16 text-white lg:px-8"
     >
-      <a href="#">
-        <div class="w-64">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg
-            id="Layer_2"
-            data-name="Layer 2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 323.79 113.98"
-          >
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #e6e6e6;
-                }
-
-                .cls-2 {
-                  fill: #ccc;
-                }
-              </style>
-            </defs>
-            <g id="Layer_1-2" data-name="Layer 1">
-              <g>
-                <path
-                  class="cls-2"
-                  d="M53.98,27.94c0,5.32-1.2,10.18-3.55,14.44-2.36,4.27-5.63,7.64-9.73,10.01-4.08,2.36-8.7,3.56-13.71,3.56s-9.63-1.2-13.71-3.56c-4.09-2.37-7.36-5.73-9.73-10.01-2.36-4.26-3.55-9.12-3.55-14.44s1.19-10.17,3.55-14.41c2.36-4.24,5.63-7.6,9.72-9.97C17.36,1.2,21.98,0,26.99,0s9.62,1.2,13.71,3.56c4.09,2.37,7.37,5.72,9.72,9.97,2.36,4.24,3.55,9.08,3.55,14.41Zm-12.7,0c0-3.29-.62-6.19-1.83-8.63-1.2-2.41-2.88-4.28-5-5.55-2.13-1.28-4.64-1.93-7.46-1.93s-5.34,.65-7.46,1.93c-2.12,1.28-3.8,3.15-5,5.55-1.22,2.44-1.83,5.35-1.83,8.63s.62,6.19,1.83,8.63c1.2,2.41,2.88,4.28,5,5.55,2.12,1.28,4.63,1.93,7.47,1.93s5.34-.65,7.46-1.93c2.11-1.27,3.79-3.14,5-5.55,1.22-2.44,1.83-5.35,1.83-8.63Z"
-                />
-                <path
-                  class="cls-2"
-                  d="M125.75,1.33l-13.38,54.62h-8.79c-3.42,0-6.41-2.31-7.26-5.63l-7.54-29.23-9.05,34.85h-8.65c-3.46,0-6.46-2.35-7.28-5.71L54.08,10.61c-.55-2.25-.05-4.59,1.38-6.41s3.58-2.87,5.9-2.87h4.06l7.28,36.88,8-31.24c.85-3.32,3.84-5.64,7.26-5.64h7.36l9.51,36.9,6.09-30.85c.69-3.5,3.79-6.05,7.36-6.05h7.46Z"
-                />
-                <path
-                  class="cls-2"
-                  d="M174.33,55.95h-5.9c-3.9,0-7.5-1.94-9.65-5.2l-18.42-27.97V55.95h-1.07c-6.37,0-11.55-5.18-11.55-11.55V1.33h5.88c3.92,0,7.53,1.96,9.67,5.24l18.42,28.21V12.89c0-6.37,5.18-11.55,11.55-11.55h1.07V55.95Z"
-                />
-                <path
-                  class="cls-2"
-                  d="M193.54,11.77v11.46h18.58v1.07c0,5.02-4.08,9.1-9.1,9.1h-9.48v11.98h20.81v1.44c0,5.02-4.08,9.1-9.1,9.1h-15.24c-5.02,0-9.1-4.08-9.1-9.1V10.41c0-5.02,4.08-9.1,9.1-9.1h24.34v1.37c0,5.02-4.08,9.1-9.1,9.1h-11.71Z"
-                />
-                <path
-                  class="cls-2"
-                  d="M265.81,28.59c0,5.36-1.14,10.16-3.4,14.27h0c-2.27,4.13-5.61,7.39-9.91,9.68-4.27,2.28-9.41,3.43-15.26,3.43h-7.75c-6.61,0-11.98-5.38-11.98-11.98V13.34c0-6.61,5.38-11.98,11.98-11.98h7.75c5.85,0,10.98,1.13,15.25,3.35,4.31,2.25,7.65,5.47,9.92,9.57,2.26,4.08,3.4,8.9,3.4,14.31Zm-12.77,0c0-5.07-1.45-9.04-4.32-11.79-2.88-2.76-7.04-4.16-12.38-4.16h-6.21v25.61c0,3.43,2.79,6.21,6.21,6.21,5.34,0,9.5-1.4,12.38-4.16,2.86-2.75,4.32-6.69,4.32-11.71Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M47.5,60.38v53.55h-1.07c-6.45,0-11.63-5.18-11.63-11.55v-11.27H14.5v22.82h-1.07c-6.37,0-11.55-5.18-11.55-11.55v-31.52c0-6.37,5.18-11.55,11.55-11.55h1.07v21.26h20.3v-9.71c0-6.37,5.18-11.55,11.55-11.55h1.07l.08,1.07Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M105.69,85.94c0,5.32-1.19,10.18-3.55,14.44-2.36,4.27-5.63,7.64-9.73,10.01-4.08,2.36-8.7,3.56-13.71,3.56s-9.63-1.2-13.71-3.56c-4.09-2.37-7.36-5.74-9.73-10.01-2.36-4.26-3.55-9.12-3.55-14.44s1.19-10.17,3.55-14.41c2.36-4.24,5.63-7.6,9.73-9.97,4.09-2.36,8.7-3.56,13.71-3.56s9.62,1.2,13.71,3.56c4.09,2.37,7.37,5.72,9.73,9.97,2.36,4.24,3.55,9.08,3.55,14.41Zm-12.7,0c0-3.29-.62-6.19-1.83-8.63-1.2-2.41-2.88-4.28-5-5.55-2.13-1.28-4.64-1.93-7.46-1.93s-5.34,.65-7.46,1.93c-2.12,1.28-3.8,3.15-5,5.55-1.22,2.44-1.83,5.35-1.83,8.63s.62,6.19,1.83,8.63c1.2,2.41,2.88,4.28,5,5.55,2.12,1.28,4.63,1.93,7.46,1.93s5.34-.65,7.46-1.93c2.11-1.27,3.8-3.14,5-5.55,1.22-2.44,1.83-5.35,1.83-8.63Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M152.98,58.84v31.84c0,5.01-.96,9.32-2.84,12.81-1.91,3.52-4.58,6.19-7.96,7.92-3.33,1.71-7.16,2.57-11.38,2.57-6.56,0-11.89-2.01-15.85-5.96-3.96-3.96-5.96-9.79-5.96-17.33v-20.37c0-6.33,5.15-11.48,11.48-11.48h1.07v31.84c0,3.83,.82,6.7,2.45,8.55,1.61,1.83,3.91,2.72,7.04,2.72s5.35-.89,6.96-2.72c1.62-1.85,2.45-4.72,2.45-8.55v-20.37c0-6.33,5.15-11.48,11.48-11.48h1.07Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M196.72,97.99c0,2.86-.73,5.53-2.16,7.94-1.44,2.42-3.58,4.38-6.38,5.83-2.77,1.44-6.16,2.17-10.08,2.17s-7.34-.67-10.38-1.98c-3.09-1.33-5.6-3.29-7.46-5.81-1.87-2.53-2.95-5.52-3.22-8.88l-.09-1.16h9.78c1.81,0,3.42,1.12,4.01,2.79,.38,1.07,.99,2.02,1.83,2.83,1.27,1.22,2.93,1.82,5.09,1.82,1.9,0,3.3-.47,4.26-1.43,.96-.96,1.43-2.19,1.43-3.74,0-1.38-.37-2.47-1.14-3.34-.83-.94-1.91-1.72-3.2-2.29-1.4-.62-3.37-1.36-5.85-2.19-3.31-1.1-6.06-2.21-8.18-3.3-2.23-1.14-4.14-2.81-5.7-4.97-1.59-2.21-2.39-5.09-2.39-8.58,0-4.83,1.77-8.7,5.27-11.5,3.42-2.75,7.99-4.14,13.57-4.14s10.47,1.43,13.94,4.25c3.51,2.85,5.53,6.7,6,11.43l.12,1.18h-8.44c-2.45,0-4.7-1.31-6.01-3.52-.31-.52-.69-1-1.14-1.42-1.09-1.03-2.58-1.53-4.54-1.53-1.68,0-2.99,.41-3.99,1.27-.95,.81-1.41,1.99-1.41,3.61,0,1.27,.36,2.29,1.1,3.11,.81,.9,1.87,1.65,3.14,2.23,1.38,.63,3.28,1.34,5.65,2.11,3.42,1.21,6.22,2.35,8.36,3.4,2.26,1.12,4.2,2.8,5.79,5.02,1.61,2.26,2.43,5.22,2.43,8.8Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M213.47,59.31v54.62h-1.07c-6.37,0-11.55-5.18-11.55-11.55v-31.52c0-6.37,5.18-11.55,11.55-11.55h1.07Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M266.55,113.95h-5.9c-3.9,0-7.5-1.95-9.65-5.2l-18.42-27.97v33.17h-1.07c-6.37,0-11.55-5.18-11.55-11.55V59.33h5.88c3.92,0,7.53,1.96,9.67,5.24l18.42,28.21v-21.89c0-6.37,5.18-11.55,11.55-11.55h1.07v54.62Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M323.79,88.65l-.02,5.14c-.77,3.6-2.3,6.97-4.53,10-2.24,3.05-5.22,5.52-8.85,7.35-3.63,1.83-7.83,2.75-12.49,2.75-5.32,0-10.09-1.19-14.17-3.52-4.1-2.34-7.31-5.66-9.55-9.87-2.23-4.18-3.36-9.01-3.36-14.37s1.13-10.19,3.36-14.37c2.24-4.2,5.44-7.53,9.51-9.9,4.06-2.36,8.82-3.56,14.14-3.56,6.6,0,12.16,1.66,16.55,4.93h0c1.83,1.37,3.41,2.96,4.7,4.73,1.39,1.91,1.59,4.41,.51,6.52-1.08,2.11-3.22,3.43-5.59,3.43h-.27c-1.96,0-3.84-1-5.01-2.67-.88-1.25-2.02-2.32-3.39-3.18-2.07-1.3-4.57-1.95-7.42-1.95s-5.33,.65-7.48,1.93c-2.14,1.27-3.83,3.13-5.02,5.51-1.21,2.41-1.82,5.3-1.82,8.59,0,5.19,1.39,9.27,4.12,12.12,2.72,2.84,6.53,4.28,11.31,4.28,3.49,0,6.53-1.04,9.02-3.1,2.2-1.81,3.73-4.3,4.57-7.39h-11.22c-3.46,0-6.27-2.81-6.27-6.27v-3.38h22.41c3.46,0,6.27,2.81,6.26,6.26Z"
-                />
-              </g>
-            </g>
-          </svg>
-        </div>
+      <a href="/" class="block">
+        <img src="./images/logo.svg" alt="OwnedHousing Logo" />
       </a>
       <section>
-        <button
-          class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all"
+        <a
+          href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
+          class="text-gray-200 hover:text-gray-300 transition-all md:hidden md:invisible md:pointer-events-none underline cursor-pointer"
         >
           Get Deals
-        </button>
+        </a>
       </section>
       <section>
         <article class="flex gap-2">
