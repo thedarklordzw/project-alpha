@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css --watch",
     "tailwind": "live-server ./src/public",
-    "dev": "npm run start & npm run tailwind"
+    "dev": "npm run start & npm run tailwind",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css"
   },
   "keywords": [],
   "author": "",
