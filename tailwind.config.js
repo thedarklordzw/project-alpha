@@ -3,8 +3,8 @@ module.exports = {
   content: ['./src/public/index.html', './src/**/*.{html,js,ts}'],
   theme: {
     fontFamily: {
-      display: ['Playfair Display', 'sans'],
-      sans: ['Rajdhani', 'sans-serif'],
+      sans: ['Figtree', 'sans-serif'],
+      display: ['Rajdhani', 'sans-serif'],
     },
 
     screens: {
@@ -23,6 +23,14 @@ module.exports = {
 
       sm: { max: '650px' },
       // => @media (max-width: 639px) { ... }
+
+      ssm: { max: '480px' },
+      // => @media (max-width: 480px) { ... }
+
+      xssm: {
+        max: '410px',
+        // => @media (max-width: 410px) { ... }
+      },
     },
     extend: {},
   },

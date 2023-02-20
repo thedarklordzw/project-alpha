@@ -7,10 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -19,16 +15,11 @@
       rel="stylesheet"
     />
     <!-- Map box -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
     <link href="./output.css" rel="stylesheet" />
-    <script type="module" src="script.js" defer></script>
-    <title>Find Apartments</title>
+    <script src="script.js" defer></script>
+    <title>OwnedHousing | Affordable Rent To Own Housing</title>
   </head>
-  <body class="flex flex-col min-h-screen relative">
+  <body class="flex flex-col min-h-screen relative bg-sky-700">
     <div
       id="modal"
       class="justify-center items-center absolute top-0 left-0 bg-sky-900/70 z-30 w-screen h-screen px-10 py-5 hidden"
@@ -54,7 +45,7 @@
         <article class="flex gap-12 items-center">
           <img src="./images/modal.webp" alt="Property Image" class="w-3/6" />
           <div>
-            <h3 class="text-5xl font-sans font-extrabold text-gray-900">
+            <h3 class="text-5xl font-display font-extrabold text-gray-900">
               Get your dream home.
             </h3>
             <p class="text-gray-600 text-xl mb-6">
@@ -67,7 +58,7 @@
                 class="py-3 px-6 w-[400px] rounded inline-block shadow-inner"
               />
               <button
-                class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded-r"
+                class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded-r font-display font-extrabold uppercase"
               >
                 Sign Up
               </button>
@@ -90,49 +81,51 @@
           <nav>
             <button
               id="button"
-              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all md:hidden md:pointer-events-none md:invisible"
+              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all md:hidden font-display font-extrabold uppercase md:pointer-events-none md:invisible"
             >
               Get Deals
             </button>
-            <button
-              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all hidden pointer-events-none invisible md:visible md:pointer-events-auto md:block"
+            <a
+              href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
+              class="text-center shadow-sm text-sky-900 rounded-full bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all hidden pointer-events-none invisible md:visible md:pointer-events-auto md:flex md:items-center md:justify-center md:w-12 md:h-12"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                width="24"
-                height="24"
+                class="inline-block m-auto w-6 h-6"
               >
                 <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"
+                />
               </svg>
-            </button>
+            </a>
           </nav>
         </header>
         <main
           class="border-b-8 border-orange-500 bg-sky-700 flex items-center rounded-sm relative"
         >
           <div
-            class="text-center sm:top-20 left-1/2 absolute translate-x-[-50%] z-20 lg:w-screen"
+            class="text-center sm:top-20 left-1/2 absolute translate-x-[-50%] z-20 lg:w-screen ssm:top-10"
           >
             <h1
-              class="mb-4 text-7xl tracking-wide text-clip font-sans font-extrabold text-white xl:text-4xl md:text-3xl sm:text-2xl"
+              class="mb-12 text-7xl tracking-wide text-clip font-sans font-extrabold text-white xl:text-4xl md:text-3xl sm:text-2xl sm:mb-4 ssm:text-lg ssm:mx-4 xssm:text-base"
             >
               Find the perfect home for you and your family
             </h1>
             <div
-              class="flex gap-8 justify-center md:flex-wrap md:px-8 md:gap-4"
+              class="flex gap-8 justify-center md:flex-wrap md:px-8 md:gap-4 xssm:block xssm:text-center"
             >
               <a
                 href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
-                class="bg-gray-100 shadow-sm text-sky-900 text-2xl font-medium inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full"
+                class="bg-gray-100 shadow-sm text-sky-900 text-2xl inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full font-display font-extrabold uppercase ssm:text-lg xssm:w-4/5 xssm:inline-block xssm:py-3 xssm:px-6"
               >
                 Get Started
               </a>
 
               <button
                 id="modal-show"
-                class="bg-transparent shadow-sm border border-gray-200 text-gray-200 text-2xl font-medium inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full sm:hidden sm:invisible sm:pointer-events-none"
+                class="bg-transparent shadow-sm border border-gray-200 text-gray-200 text-2xl inline-block py-5 px-16 rounded hover:bg-orange-500 hover:border-orange-500 hover:text-gray-200 transition-all md:block md:w-full sm:hidden sm:invisible sm:pointer-events-none font-display font-extrabold uppercase"
               >
                 Learn More
               </button>
@@ -140,7 +133,7 @@
           </div>
           <div class="">
             <img
-              class="inline-block brightness-50"
+              class="inline-block brightness-50 ssm:min-w-full"
               src="./images/hero.webp"
               alt="Hero image, Rent to Own Housing"
             />
@@ -148,60 +141,113 @@
         </main>
       </div>
     </div>
-    <footer
-      class="text-2xl flex justify-between items-center shrink-0 bg-sky-700 px-32 py-16 text-white lg:px-8"
+    <section
+      class="bg-gray-300 text-sky-800 p-12 hidden pointer-events-none invisible md:visible md:pointer-events-auto md:block xssm:p-6"
     >
-      <a href="/" class="block">
-        <img src="./images/logo.svg" alt="OwnedHousing Logo" />
-      </a>
-      <section>
-        <a
-          href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
-          class="text-gray-200 hover:text-gray-300 transition-all md:hidden md:invisible md:pointer-events-none underline cursor-pointer"
-        >
-          Get Deals
+      <h3
+        class="text-2xl font-sans font-extrabold mb-3 sm:text-xl xssm:text-lg"
+      >
+        Subscribe to our mailing list to get the best offers
+      </h3>
+      <article>
+        <div>
+          <form class="flex items-center flex-wrap sm:gap-4">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-[400px] rounded py-3 px-6 shadow-inner font-display font-extrabold sm:w-full"
+            />
+            <button
+              class="bg-sky-700 text-gray-100 py-3 px-8 rounded shadow uppercase sm:w-full flex justify-center items-center"
+            >
+              <span>Sign Up</span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="fill-gray-200"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  /></svg
+              ></span>
+            </button>
+          </form>
+        </div>
+      </article>
+    </section>
+    <footer
+      class="text-2xl shrink-0 bg-sky-700 px-32 py-16 text-white lg:px-8 xssm:py-8"
+    >
+      <div class="flex justify-between items-center mb-4">
+        <a href="/" class="block">
+          <img src="./images/logo.svg" alt="OwnedHousing Logo" />
         </a>
-      </section>
-      <section>
-        <article class="flex gap-2">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-12 fill-gray-100"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-              />
-            </svg>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-12 fill-gray-100"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
-              />
-            </svg>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-12 fill-gray-100"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"
-              />
-            </svg>
-          </div>
-        </article>
-      </section>
+        <section>
+          <a
+            href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
+            class="text-gray-200 transition-all md:hidden md:invisible md:pointer-events-none font-display font-extrabold uppercase border-b border-current hover:text-orange-500 cursor-pointer"
+          >
+            Get Deals
+          </a>
+        </section>
+        <section>
+          <article class="flex gap-2 md:gap-4 xssm:flex-col xssm:gap-1">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-12 fill-gray-100 md:w-8 xssm:w-6"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-12 fill-gray-100 md:w-8 xssm:w-6"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-12 fill-gray-100 md:w-8 xssm:w-6"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+          </article>
+        </section>
+      </div>
+      <small
+        id="copy"
+        class="font-medium text-lg font-display text-center block"
+        >All Rights Reserved, OwnedHousing
+        <script>
+          const date = new Date();
+          const year = date.getFullYear();
+
+          const smallEl = (document.getElementById(
+            'copy'
+          ).innerHTML = `Copyright &copy; ${year} OwnedHousing. All Rights Reserved.`);
+        </script></small
+      >
     </footer>
   </body>
 </html>

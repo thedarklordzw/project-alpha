@@ -6,10 +6,10 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tailwindcss -i ./src/input.css -o ./src/public/output.css --watch",
+    "start": "npx tailwindcss -i ./src/public/input.css -o ./src/public/output.css --watch",
     "tailwind": "live-server ./src/public",
     "dev": "npm run start & npm run tailwind",
-    "build": "npx tailwindcss -o ./src/public/output.css --minify"
+    "build": "npx tailwindcss -i ./src/public/input.css -o ./src/dist/styles.css"
   },
   "keywords": [],
   "author": "",
