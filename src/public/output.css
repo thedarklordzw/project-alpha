@@ -529,14 +529,6 @@ button,
   pointer-events: none;
 }
 
-.pointer-events-auto {
-  pointer-events: auto;
-}
-
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -593,6 +585,10 @@ button,
   margin-bottom: 3rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -629,10 +625,6 @@ button,
   height: 2rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -661,16 +653,20 @@ button,
   width: 50%;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-\[400px\] {
   width: 400px;
 }
 
 .w-12 {
   width: 3rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .shrink-0 {
@@ -708,10 +704,6 @@ button,
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-8 {
@@ -791,14 +783,19 @@ button,
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
+.bg-gray-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-sky-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -872,6 +869,10 @@ button,
   padding-bottom: 4rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -904,11 +905,6 @@ button,
   line-height: 2rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -920,10 +916,6 @@ button,
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -974,6 +966,11 @@ button,
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1009,9 +1006,9 @@ button,
   transition-duration: 150ms;
 }
 
-.hover\:border-orange-500:hover {
+.hover\:border-gray-200:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .hover\:bg-orange-500:hover {
@@ -1019,14 +1016,19 @@ button,
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:text-sky-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-100:hover {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .hover\:text-orange-500:hover {
@@ -1034,16 +1036,152 @@ button,
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
+@media (max-width: 1840px) {
+  .sxxl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sxxl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 1536px) {
+  .xxl\:pointer-events-none {
+    pointer-events: none;
+  }
+
+  .xxl\:pointer-events-auto {
+    pointer-events: auto;
+  }
+
+  .xxl\:visible {
+    visibility: visible;
+  }
+
+  .xxl\:invisible {
+    visibility: hidden;
+  }
+
+  .xxl\:right-10 {
+    right: 2.5rem;
+  }
+
+  .xxl\:top-10 {
+    top: 2.5rem;
+  }
+
+  .xxl\:block {
+    display: block;
+  }
+
+  .xxl\:hidden {
+    display: none;
+  }
+
+  .xxl\:h-12 {
+    height: 3rem;
+  }
+
+  .xxl\:h-6 {
+    height: 1.5rem;
+  }
+
+  .xxl\:w-12 {
+    width: 3rem;
+  }
+
+  .xxl\:w-6 {
+    width: 1.5rem;
+  }
+
+  .xxl\:gap-4 {
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 1279px) {
+  .xl\:pointer-events-none {
+    pointer-events: none;
+  }
+
+  .xl\:invisible {
+    visibility: hidden;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .xl\:p-12 {
+    padding: 3rem;
+  }
+
+  .xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (max-width: 1060px) {
+  .lg\:pointer-events-none {
+    pointer-events: none;
+  }
+
+  .lg\:pointer-events-auto {
+    pointer-events: auto;
+  }
+
+  .lg\:visible {
+    visibility: visible;
+  }
+
+  .lg\:invisible {
+    visibility: hidden;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:w-screen {
     width: 100vw;
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:px-8 {
@@ -1073,10 +1211,6 @@ button,
     display: block;
   }
 
-  .md\:inline-block {
-    display: inline-block;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1089,16 +1223,16 @@ button,
     height: 3rem;
   }
 
+  .md\:w-12 {
+    width: 3rem;
+  }
+
   .md\:w-full {
     width: 100%;
   }
 
   .md\:w-8 {
     width: 2rem;
-  }
-
-  .md\:w-12 {
-    width: 3rem;
   }
 
   .md\:flex-wrap {
@@ -1133,14 +1267,6 @@ button,
     pointer-events: none;
   }
 
-  .sm\:pointer-events-auto {
-    pointer-events: auto;
-  }
-
-  .sm\:visible {
-    visibility: visible;
-  }
-
   .sm\:invisible {
     visibility: hidden;
   }
@@ -1151,10 +1277,6 @@ button,
 
   .sm\:mb-4 {
     margin-bottom: 1rem;
-  }
-
-  .sm\:block {
-    display: block;
   }
 
   .sm\:hidden {
@@ -1181,22 +1303,6 @@ button,
 }
 
 @media (max-width: 480px) {
-  .ssm\:pointer-events-none {
-    pointer-events: none;
-  }
-
-  .ssm\:pointer-events-auto {
-    pointer-events: auto;
-  }
-
-  .ssm\:visible {
-    visibility: visible;
-  }
-
-  .ssm\:invisible {
-    visibility: hidden;
-  }
-
   .ssm\:top-10 {
     top: 2.5rem;
   }
@@ -1206,24 +1312,8 @@ button,
     margin-right: 1rem;
   }
 
-  .ssm\:block {
-    display: block;
-  }
-
-  .ssm\:hidden {
-    display: none;
-  }
-
-  .ssm\:w-full {
-    width: 100%;
-  }
-
   .ssm\:min-w-full {
     min-width: 100%;
-  }
-
-  .ssm\:gap-4 {
-    gap: 1rem;
   }
 
   .ssm\:text-lg {
@@ -1245,10 +1335,6 @@ button,
     width: 80%;
   }
 
-  .xssm\:w-4 {
-    width: 1rem;
-  }
-
   .xssm\:w-6 {
     width: 1.5rem;
   }
@@ -1259,10 +1345,6 @@ button,
 
   .xssm\:gap-1 {
     gap: 0.25rem;
-  }
-
-  .xssm\:p-3 {
-    padding: 0.75rem;
   }
 
   .xssm\:p-6 {

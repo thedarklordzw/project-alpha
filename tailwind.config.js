@@ -8,6 +8,10 @@ module.exports = {
     },
 
     screens: {
+      sxxl: {
+        max: '1840px',
+      },
+
       xxl: {
         max: '1536px',
       },

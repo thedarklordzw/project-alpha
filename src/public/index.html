@@ -22,19 +22,19 @@
   <body class="flex flex-col min-h-screen relative bg-sky-700">
     <div
       id="modal"
-      class="justify-center items-center absolute top-0 left-0 bg-sky-900/70 z-30 w-screen h-screen px-10 py-5 hidden"
+      class="justify-center items-center absolute top-0 left-0 bg-sky-900/70 z-30 w-screen h-screen px-10 py-5 hidden md:hidden md:invisible md:pointer-events-none"
     >
       <div
         class="relative shadow-2xl rounded-md overflow-hidden bg-gray-100 w-8/12"
       >
         <button
           id="close"
-          class="absolute flex items-center justify-center bg-red-500 right-16 top-16 w-16 h-16 rounded-full"
+          class="absolute flex items-center justify-center bg-gray-700 right-16 top-16 w-16 h-16 rounded-full xxl:w-12 xxl:h-12 xxl:right-10 xxl:top-10"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-8 h-8 fill-gray-200"
+            class="w-8 h-8 fill-gray-200 xxl:w-6 xxl:h-6"
           >
             <path fill="none" d="M0 0h24v24H0z" />
             <path
@@ -42,25 +42,48 @@
             />
           </svg>
         </button>
-        <article class="flex gap-12 items-center">
-          <img src="./images/modal.webp" alt="Property Image" class="w-3/6" />
-          <div>
-            <h3 class="text-5xl font-display font-extrabold text-gray-900">
+        <article
+          class="flex gap-8 items-center overflow-hidden md:block xxl:gap-4 xl:p-12"
+        >
+          <img
+            src="./images/modal.webp"
+            alt="Property Image"
+            class="w-3/6 xl:hidden xl:pointer-events-none xl:invisible"
+          />
+          <div class="pr-8 w-3/6 xl:w-full">
+            <h3
+              class="text-5xl font-display font-extrabold text-gray-900 sxxl:text-3xl xl:text-4xl"
+            >
               Get your dream home.
             </h3>
-            <p class="text-gray-600 text-xl mb-6">
+            <p class="text-gray-600 text-xl mb-6 sxxl:text-lg xl:text-xl">
               Subscribe for the best deals, straight to your inbox
             </p>
-            <div class="mb-3 flex">
+            <div class="mb-3 flex lg:flex-wrap lg:gap-4">
               <input
                 type="email"
                 placeholder="Email Address"
-                class="py-3 px-6 w-[400px] rounded inline-block shadow-inner"
+                class="py-5 px-10 w-[70%] rounded inline-block shadow-inner xl:w-10/12 lg:w-full lg:block"
               />
               <button
-                class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded-r font-display font-extrabold uppercase"
+                class="py-3 px-6 bg-sky-900 hover:bg-orange-500 transition-all text-white rounded-r font-display font-extrabold uppercase xl:px-12 lg:w-full lg:block"
               >
-                Sign Up
+                <span
+                  class="xxl:invisible xxl:pointer-events-none xxl:hidden lg:visible lg:block lg:pointer-events-auto"
+                  >Sign Up</span
+                >
+                <span
+                  class="hidden pointer-events-none invisible xxl:visible xxl:pointer-events-auto xxl:block lg:invisible lg:hidden lg:pointer-events-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 fill-gray-100"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 9H8v2h4v3l4-4-4-4v3z"
+                    /></svg
+                ></span>
               </button>
             </div>
             <span class="block font-medium text-gray-400"
@@ -81,7 +104,7 @@
           <nav>
             <button
               id="button"
-              class="shadow-sm text-sky-900 py-5 px-12 rounded bg-gray-100 hover:text-gray-100 hover:bg-orange-500 transition-all md:hidden font-display font-extrabold uppercase md:pointer-events-none md:invisible"
+              class="shadow-sm text-gray-200 py-5 px-12 rounded bg-orange-500 hover:text-sky-700 hover:bg-gray-200 transition-all md:hidden font-display font-extrabold uppercase md:pointer-events-none md:invisible"
             >
               Get Deals
             </button>
@@ -118,14 +141,14 @@
             >
               <a
                 href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
-                class="bg-gray-100 shadow-sm text-sky-900 text-2xl inline-block py-5 px-16 rounded hover:bg-orange-500 hover:text-gray-200 transition-all md:block md:w-full font-display font-extrabold uppercase ssm:text-lg xssm:w-4/5 xssm:inline-block xssm:py-3 xssm:px-6"
+                class="shadow-sm text-2xl inline-block py-5 px-16 rounded text-gray-200 bg-orange-500 hover:text-sky-700 hover:bg-gray-200 transition-all md:block md:w-full font-display font-extrabold uppercase ssm:text-lg xssm:w-4/5 xssm:inline-block xssm:py-3 xssm:px-6"
               >
                 Get Started
               </a>
 
               <button
                 id="modal-show"
-                class="bg-transparent shadow-sm border border-gray-200 text-gray-200 text-2xl inline-block py-5 px-16 rounded hover:bg-orange-500 hover:border-orange-500 hover:text-gray-200 transition-all md:block md:w-full sm:hidden sm:invisible sm:pointer-events-none font-display font-extrabold uppercase"
+                class="bg-transparent shadow-sm border border-gray-200 text-gray-200 text-2xl inline-block py-5 px-16 rounded hover:bg-gray-200 hover:border-gray-200 hover:text-sky-700 transition-all md:block md:w-full sm:hidden sm:invisible sm:pointer-events-none font-display font-extrabold uppercase"
               >
                 Learn More
               </button>
@@ -158,20 +181,18 @@
               class="w-[400px] rounded py-3 px-6 shadow-inner font-display font-extrabold sm:w-full"
             />
             <button
-              class="bg-sky-700 text-gray-100 py-3 px-8 rounded shadow uppercase sm:w-full flex justify-center items-center"
+              class="bg-sky-700 text-gray-100 py-3 px-8 gap-2 mb rounded shadow uppercase sm:w-full flex justify-center items-center"
             >
               <span>Sign Up</span>
-              <span
+              <span class="mb-1"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  class="fill-gray-200"
+                  class="w-6 h-6 fill-gray-100"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
-                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 9H8v2h4v3l4-4-4-4v3z"
                   /></svg
               ></span>
             </button>
@@ -189,14 +210,14 @@
         <section>
           <a
             href="https://degtrk.com/?a=2375&oc=4055&c=7752&s1="
-            class="text-gray-200 transition-all md:hidden md:invisible md:pointer-events-none font-display font-extrabold uppercase border-b border-current hover:text-orange-500 cursor-pointer"
+            class="text-gray-200 transition-all md:hidden md:invisible md:pointer-events-none font-display font-extrabold uppercase hover:text-orange-500 cursor-pointer"
           >
             Get Deals
           </a>
         </section>
         <section>
           <article class="flex gap-2 md:gap-4 xssm:flex-col xssm:gap-1">
-            <a href="">
+            <a href="https://www.instagram.com/ownedhousing/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -208,7 +229,7 @@
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="https://twitter.com/ownedhousing">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -220,7 +241,7 @@
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=100090412816458">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
