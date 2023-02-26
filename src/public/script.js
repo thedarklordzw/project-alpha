@@ -7,14 +7,12 @@ const close = document.getElementById('close');
 const button = document.getElementById('button');
 
 const showModal = event => {
-  console.log(event);
   modal.classList.add('flex');
   modal.classList.remove('hidden');
   body.classList.add('overflow-hidden');
 };
 
 const hideModal = event => {
-  console.log(event);
   modal.classList.remove('flex');
   modal.classList.add('hidden');
   body.classList.remove('overflow-hidden');
