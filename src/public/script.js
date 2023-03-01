@@ -9,13 +9,13 @@ const button = document.getElementById('button');
 const showModal = event => {
   modal.classList.add('flex');
   modal.classList.remove('hidden');
-  body.classList.add('overflow-hidden');
+  // body.classList.add('overflow-hidden');
 };
 
 const hideModal = event => {
   modal.classList.remove('flex');
   modal.classList.add('hidden');
-  body.classList.remove('overflow-hidden');
+  // body.classList.remove('overflow-hidden');
 };
 
 const modalOverlayClick = event => {
