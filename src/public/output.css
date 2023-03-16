@@ -629,16 +629,8 @@ button,
   height: 100vh;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-full {
@@ -679,10 +671,6 @@ button,
 
 .w-12 {
   width: 3rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .shrink-0 {
@@ -738,8 +726,8 @@ button,
   text-overflow: clip;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-full {
@@ -754,8 +742,8 @@ button,
   border-radius: 0.125rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-r {
@@ -831,14 +819,14 @@ button,
   padding: 3rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-3 {
@@ -907,8 +895,8 @@ button,
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -927,8 +915,8 @@ button,
   line-height: 1.75rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -1036,6 +1024,16 @@ button,
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .hover\:text-sky-700:hover {
